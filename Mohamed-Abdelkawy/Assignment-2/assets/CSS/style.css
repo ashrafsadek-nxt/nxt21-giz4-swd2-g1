@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  height: 80vh;
+}
+main section.text {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
+main section.text h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+main section.text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+main section.text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+main section.text button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main section.text button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+footer section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer section h3 {
+  margin-right: 10px;
+}
+footer section ul {
+  list-style: none;
+  display: flex;
+}
+footer section li {
+  margin-right: 10px;
+}
+footer section a {
+  color: #fff;
+  text-decoration: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.projects {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+font-size: x-large;
+}
