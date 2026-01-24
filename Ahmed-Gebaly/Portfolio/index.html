@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmed Gebaly — Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ====== NAVBAR ====== -->
+  <header class="navbar-wrap">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="." aria-label="Go to homepage">
+        <div class="logo-badge" aria-hidden="true">AG</div>
+      </a>
+      <div class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ====== PAGE SECTIONS ====== -->
+  <main>
+    <section id="home" tabindex="-1" aria-labelledby="home-heading">
+      <h2 class="section-heading" id="home-heading" style="position:absolute;left:-9999px;">Home</h2>
+      <p class="section-sub">
+        <span class="typewriter" aria-label="Hi, I'm Ahmed Gebaly. Welcome to my Portfolio.">
+          Hi, I'm Ahmed Gebaly. Welcome to my Portfolio.
+        </span>
+      </p>
+    </section>
+
+    <section id="about" tabindex="-1" aria-labelledby="about-heading">
+      <div class="about-header">
+        <h2 class="about-title" id="about-heading">
+          <span class="about-title-main">About Me</span>
+          <span class="about-title-underline"></span>
+        </h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-info">
+          <p class="section-sub">
+            <span class="about-highlight">Passionate. Creative. Driven.</span>
+            I'm a <strong>junior web developer</strong> with <strong>6+ months</strong> of hands-on experience building modern, responsive websites and web apps.
+            <br>
+            I thrive on <span class="about-keyword">problem solving</span>, <span class="about-keyword">collaboration</span>, and transforming ideas into polished digital experiences.
+            <br>
+            My curiosity and dedication push me to continuously learn new technologies and deliver <span class="about-keyword">clean, maintainable code</span> that makes an impact.
+          </p>
+        </div>
+        <div class="about-stats-cards">
+          <div class="about-stat-card">
+            <span class="about-stat-number">6<span class="about-stat-plus">+</span></span>
+            <span class="about-stat-label">Months<br>Experience</span>
+          </div>
+          <div class="about-stat-card">
+            <span class="about-stat-number">12</span>
+            <span class="about-stat-label">Projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="skills-header">
+        <h2 class="skills-title" id="skills-heading">
+          <span class="skills-title-main">Skills</span>
+          <span class="skills-title-underline"></span>
+        </h2>
+      </div>
+      <div class="card">
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">TypeScript</span>
+        <span class="pill">React.js</span>
+        <span class="pill">Node.js</span>
+      </div>
+      <div style="margin-top:18px;">
+        <span style="font-size:1.05rem;color:var(--text-secondary);margin-right:10px;">Also valued:</span>
+        <span class="pill" style="background:rgba(56,217,169,0.10);color:var(--secondary);">Communication</span>
+        <span class="pill" style="background:rgba(56,217,169,0.10);color:var(--secondary);">Reliability</span>
+        <span class="pill" style="background:rgba(56,217,169,0.10);color:var(--secondary);">Problem Solving</span>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="projects-header">
+        <h2 class="projects-title" id="projects-heading">
+          <span class="projects-title-main">Projects</span>
+          <span class="projects-title-underline"></span>
+        </h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">A modern, responsive portfolio built with React.js and CSS, showcasing my freelance work and skills.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">E-commerce Landing</h3>
+          <p class="project-desc">Landing page for an online store, featuring product highlights, smooth animations, and conversion-focused design.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">Blog Platform</h3>
+          <p class="project-desc">A full-stack blog platform with Node.js backend, REST API, and a React.js front-end for content publishing.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">Dashboard UI</h3>
+          <p class="project-desc">Interactive admin dashboard with charts, user management, and responsive layout, built with React and Chart.js.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="projects-more">
+        <a href="#" class="see-more-btn">See more projects &rarr;</a>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="services-header">
+        <h2 class="services-title" id="services-heading">
+          <span class="services-title-main">Services</span>
+          <span class="services-title-underline"></span>
+        </h2>
+      </div>
+      <div class="card">
+        <ul>
+          <li>Modern Responsive Websites (React / Next.js)</li>
+          <li>Single‑Page Applications Development</li>
+          <li>Custom Dashboards & Admin Panels</li>
+          <li>Fixing / Updating Existing React Projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="contact-header">
+        <h2 class="contact-title" id="contact-heading">
+          <span class="contact-title-main">Contact</span>
+          <span class="contact-title-underline"></span>
+        </h2>
+      </div>
+      <div class="card">Email, form, or social links.</div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <span>&copy; 2026 Ahmed Gebaly. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>
