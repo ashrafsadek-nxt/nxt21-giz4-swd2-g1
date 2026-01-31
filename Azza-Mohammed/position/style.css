@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F0	;
+    font-family: Poppins;
+
+}
+/*===================================================3Boxes=================================================*/
+.d-flex {
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.static-div {
+    background-color: #FFE8D6;
+    border: 2px solid #ecb28a;
+    width: 180px;
+    height: 250px;
+    /* box-shadow: -5px 3px 4px 1px #d19a67; */
+    position: static;
+}
+
+.relative-div {
+    background-color: #D8F3DC;
+    border: 2px solid #34aa9f;
+    width: 180px;
+    height: 250px;
+    /* box-shadow: -5px 3px 8px  #4f8a85; */
+    position: relative;
+    bottom: 205px;
+    left: 40px;
+}
+
+.absolute-div {
+    background-color: #CED4DA;
+    width: 180px;
+    height: 250px;
+    border: 3px solid #81a6b8;
+    /* box-shadow: -5px 3px 8px  #6A5ACD; */
+    position: absolute;
+    top: 171px;
+    left: 244px;
+
+}
+
+/*=================================================================Container===============================================*/
+.container-sec {
+    width: 650px;
+    height: 330px;
+    border: 5px solid #B5EAEA;
+    position: relative;
+    color: #4A4A4A;
+    box-shadow: -3px 3px 3px 3px #c2dddd ;
+
+
+}
+.container-sec h4{
+    border: 3px solid #B5EAEA;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+      border-radius: 5px;
+
+
+
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.center {
+  position: absolute;
+  top: 45%;
+ left: 42%;
+}

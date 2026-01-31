@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div,p{
+            border: 2px solid blueviolet;
+        }  */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            /* padding: 10px; */
+            background-color: #cfcccc;
+        }
+
+        div {
+            padding: 30px;
+            margin: 50px;
+        }
+
+        .container {
+            float: left;
+            border: 1px solid #ddd;
+            margin: 10px;
+            width: 45%;
+            box-shadow: 2px 2px 10px #333;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        span {
+            color: rgb(223, 109, 147);
+
+        }
+
+
+        .center {
+            text-align: center;
+        }
+
+        .form-head {
+            margin-bottom: 15px;
+            color: rgb(223, 109, 147);
+            font-weight: bold;
+            font-size: 35px;
+            font-family: monospace;
+
+        }
+
+        .container a {
+            text-decoration: none;
+            color: rgb(194, 53, 237);
+        }
+
+        .container a:hover {
+            color: violet;
+        }
+
+        .form-sec {
+            width: 60%;
+            margin: auto;
+        }
+
+        .form-sec .input-width {
+            width: 70%;
+            border: 1px solid violet;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .form-sec h2 {
+            color: rgb(223, 109, 147);
+            font-family: monospace;
+            font-weight: bold;
+            margin: 10px;
+
+        }
+
+        .submit {
+            background-color: rgb(223, 109, 147);
+            color: white;
+            width: 50%;
+            border: 1bx solid violet;
+            padding: 8px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .submit:hover {
+            background-color: transparent;
+
+        }
+
+        #text {
+            border-radius: 8px;
+        }
+
+        .section h1 {
+            color: rgb(223, 109, 147);
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Browser adding spaces (margins and paddings) automatically -->
+        <h1>HTML Block and inline Elements</h1>
+        <h2>Block-level Elements</h2>
+        <!-- span inline element we can use it to style specific part of any block element without affect any other element -->
+        <p>Lorem ipsum dolor,<span>sit amet consectetur</span> adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet. <a href="google.com">For More</a></p>
+    </div>
+    <div class="container">
+        <!-- Browser adding spaces (margins and paddings) automatically -->
+        <h1>HTML Block and inline Elements</h1>
+        <h2>Block-level Elements</h2>
+        <!-- span inline element we can use it to style specific part of any block element without affect any other element -->
+        <p>Lorem ipsum dolor,<span>sit amet consectetur</span> adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet. <a href="#">For More</a></p>
+    </div>
+    <div class="container">
+        <!-- Browser adding spaces (margins and paddings) automatically -->
+        <h1>HTML Block and inline Elements</h1>
+        <h2>Block-level Elements</h2>
+        <!-- span inline element we can use it to style specific part of any block element without affect any other element -->
+        <p>Lorem ipsum dolor,<span>sit amet consectetur</span> adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor <strong>sit amet.</strong></p>
+    </div>
+    <div class="container">
+        <!-- Browser adding spaces (margins and paddings) automatically -->
+        <h1>HTML Block and inline Elements</h1>
+        <h2>Block-level Elements</h2>
+        <!-- span inline element we can use it to style specific part of any block element without affect any other element -->
+        <p>Lorem ipsum dolor,<span>sit amet consectetur</span> adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor <strong>sit amet.</strong></p>
+    </div>
+    <div class="clear"></div>
+    <div class="center">
+        <!-- Browser adding spaces (margins and paddings) automatically -->
+        <h2>Block-level Elements</h2>
+        <!-- span inline element we can use it to style specific part of any block element without affect any other element -->
+        <p>Lorem ipsum dolor,<span>sit amet consectetur</span> adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <section class="center form-sec">
+        <h1 class="form-head">For Registeration</h1>
+        <!-- we use forms to collect data from users ,send data to sever -->
+        <!-- form tag is just container   -->
+        <form action="">
+            <label for="fname">First Name</label>
+            <!-- input is just text field -->
+            <input id="fname" type="text" class="input-width" placeholder="Enter Your First Name">
+            <br>
+            <br>
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" class="input-width" placeholder="Enter Your Last Name">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="text" class="input-width" placeholder="Enter Your Email">
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input id="password" type="password" class="input-width" placeholder="Enter Your Password">
+            <br>
+            <br>
+            <h2>Gender</h2>
+            <!-- to choose only one choice from radio we use name but to send clear data to server we use value -->
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" value="male">
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio" value="female">
+
+            <!-- to ask user to choose only one choice ,all choices or not to choose any thing we can use checkbox -->
+            <h2>Courses</h2>
+            <input id="css" name="subj1" value="css" type="checkbox" checked disabled>
+            <label for="html">HTML</label>
+
+            <input id="html" name="subj2" value="css" type="checkbox">
+            <label for="css">CSS</label>
+
+            <input id="javascript" name="subj3" value="javascript" type="checkbox">
+            <label for="javascript">JavaScript</label>
+            <br>
+            <br>
+            <h2>Leave Your Message</h2>
+
+            <textarea id="text" name="" id="" cols="60" rows="8"></textarea>
+            <!-- For Submiting Form data -->
+            <input type="submit" value="send" class=" submit">
+
+
+
+
+
+
+
+        </form>
+    </section>
+    <div class="section center">
+        <h1>Many success stories </h1>
+        <video src="Success.mp4" width="450px" height="450px" autoplay controls></video>
+        <div> <audio src="mew.mp3" controls muted loop></audio>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

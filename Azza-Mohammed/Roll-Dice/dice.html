@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll-Dice</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #327CBE;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        h1{
+            color: rgb(255, 234, 127);
+            font-size: 40px;
+            margin-top: 40px;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .roll {
+           /* width: 50%;
+            margin: 80px auto;*/
+            background-color: rgb(255, 234, 127);
+            height: 250px;
+            width: 40%;
+            border-radius: 20px;
+            text-align: center;
+            padding: 50px;
+            color: #327CBE;
+        }
+
+        .btn {
+            padding: 8px;
+            color: rgb(255, 234, 127);
+            background-color: #327CBE;
+            border-radius: 5px;
+            border: 3px solid #327CBE;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: #327CBE;
+            transition: all 0.1s;
+        }
+
+        img {
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+           <h1>Let’s Play</h1>
+
+ <section>
+    <main class="roll">
+        <div id="mydiv"><img id="dice" src="D1.PNG" /></div>
+        <button class="btn" id="btn">Roll</button>
+    </main>
+ </section>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            var num = Math.floor(1 + Math.random() * 6);
+            document.getElementById("mydiv").innerHTML = "<img src='D" + num + ".PNG' />";
+        });
+    </script>
+</body>
+
+</html>

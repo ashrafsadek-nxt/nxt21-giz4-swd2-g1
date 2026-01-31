@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators</title>
+    <style>
+        div {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #faebd791;
+            box-shadow: 0px 0px 21px #7b7a7a5b;
+            height: auto;
+            padding: 50px;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: sans-serif;
+            line-height: 2;
+            border-radius: 10px;
+            outline: 5px solid rgb(240, 91, 37);
+        }
+
+        section {
+            width: 90%;
+            margin: 10px auto;
+            border-radius: 10px;
+            background-color: #faebd791;
+            box-shadow: 0px 0px 21px #7b7a7a5b;
+            height: auto;
+            padding: 50px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            outline: 5px solid rgb(240, 91, 37);
+
+        }
+        
+        .example {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid rgb(240, 91, 37);
+            text-align: left;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #e4a75691;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #fefcfc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="salaryDiv"></div>
+    <section class="operators">
+        <h1>JavaScript Operators:</h1>
+        <ul style="line-height: 2;">
+            <li>Arithmetic Operators</li>
+            <li>Assignment Operators</li>
+            <li>Comparison Operators</li>
+            <li>String Operators</li>
+            <li>Logical Operators</li>
+            <li>Bitwise Operators</li>
+            <li>Ternary Operators</li>
+            <li>Type Operators</li>
+        </ul>
+        
+        <!-- Arithmetic Operators Section -->
+        <div>
+            <h2>Arithmetic Operators</h2>
+            <p>Arithmetic Operators are used to perform arithmetic on numbers:</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td>let x = 5 + 2; // 7</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtraction</td>
+                    <td>let x = 5 - 2; // 3</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td>let x = 5 * 2; // 10</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Exponentiation</td>
+                    <td>let x = 5 ** 2; // 25</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Division</td>
+                    <td>let x = 5 / 2; // 2.5</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Modulus</td>
+                    <td>let x = 5 % 2; // 1</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Increment</td>
+                    <td>let x = 5; x++; // 6</td>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>Decrement</td>
+                    <td>let x = 5; x--; // 4</td>
+                </tr>
+            </table>
+
+            <div id="arthiBox" class="example">
+                <h3>Arithmetic Examples</h3>
+                <p id="arithmeticExamples"></p>
+            </div>
+        </div>
+
+        <!-- Assignment Operators Section -->
+        <div>
+            <h2>Assignment Operators</h2>
+            <p>Assignment operators assign values to JavaScript variables:</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Example</th>
+                    <th>Same As</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                    <td id="assign1"></td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>x += y</td>
+                    <td>x = x + y</td>
+                    <td id="assign2"></td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>x -= y</td>
+                    <td>x = x - y</td>
+                    <td id="assign3"></td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                    <td id="assign4"></td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                    <td id="assign5"></td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>x %= y</td>
+                    <td>x = x % y</td>
+                    <td id="assign6"></td>
+                </tr>
+                <tr>
+                    <td>**=</td>
+                    <td>x **= y</td>
+                    <td>x = x ** y</td>
+                    <td id="assign7"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Comparison Operators Section -->
+        <div>
+            <h2>Comparison Operators</h2>
+            <p>Comparison operators compare two values and return a boolean:</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Equal to</td>
+                    <td>5 == "5"</td>
+                    <td id="comp1"></td>
+                </tr>
+                <tr>
+                    <td>===</td>
+                    <td>Equal value and type</td>
+                    <td>5 === "5"</td>
+                    <td id="comp2"></td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Not equal</td>
+                    <td>5 != "5"</td>
+                    <td id="comp3"></td>
+                </tr>
+                <tr>
+                    <td>!==</td>
+                    <td>Not equal value or type</td>
+                    <td>5 !== "5"</td>
+                    <td id="comp4"></td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Greater than</td>
+                    <td>5 > 3</td>
+                    <td id="comp5"></td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Less than</td>
+                    <td>5 < 3</td>
+                    <td id="comp6"></td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Greater than or equal</td>
+                    <td>5 >= 5</td>
+                    <td id="comp7"></td>
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Less than or equal</td>
+                    <td>5 <= 3</td>
+                    <td id="comp8"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Logical Operators Section -->
+        <div>
+            <h2>Logical Operators</h2>
+            <p>Logical operators are used to determine the logic between variables or values:</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>Logical AND</td>
+                    <td>true && false</td>
+                    <td id="log1"></td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Logical OR</td>
+                    <td>true || false</td>
+                    <td id="log2"></td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Logical NOT</td>
+                    <td>!true</td>
+                    <td id="log3"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Bitwise Operators Section -->
+        <div>
+            <h2>Bitwise Operators</h2>
+            <p>Bitwise operators perform operations on binary representations of numbers:</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Result (5 & 1)</th>
+                </tr>
+                <tr>
+                    <td>&</td>
+                    <td>AND</td>
+                    <td>5 & 1</td>
+                    <td id="bit1"></td>
+                </tr>
+                <tr>
+                    <td>|</td>
+                    <td>OR</td>
+                    <td>5 | 1</td>
+                    <td id="bit2"></td>
+                </tr>
+                <tr>
+                    <td>^</td>
+                    <td>XOR</td>
+                    <td>5 ^ 1</td>
+                    <td id="bit3"></td>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>NOT</td>
+                    <td>~5</td>
+                    <td id="bit4"></td>
+                </tr>
+                <tr>
+                    <td><<</td>
+                    <td>Left shift</td>
+                    <td>5 << 1</td>
+                    <td id="bit5"></td>
+                </tr>
+                <tr>
+                    <td>>></td>
+                    <td>Right shift</td>
+                    <td>5 >> 1</td>
+                    <td id="bit6"></td>
+                </tr>
+                <tr>
+                    <td>>>></td>
+                    <td>Unsigned right shift</td>
+                    <td>5 >>> 1</td>
+                    <td id="bit7"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        /*========== Variables =============*/
+        const salaryElement = document.getElementById("salaryDiv");
+        const arithmeticExamples = document.getElementById("arithmeticExamples");
+        
+        // Assignment operators
+        const assign1 = document.getElementById("assign1");
+        const assign2 = document.getElementById("assign2");
+        const assign3 = document.getElementById("assign3");
+        const assign4 = document.getElementById("assign4");
+        const assign5 = document.getElementById("assign5");
+        const assign6 = document.getElementById("assign6");
+        const assign7 = document.getElementById("assign7");
+        
+        // Comparison operators
+        const comp1 = document.getElementById("comp1");
+        const comp2 = document.getElementById("comp2");
+        const comp3 = document.getElementById("comp3");
+        const comp4 = document.getElementById("comp4");
+        const comp5 = document.getElementById("comp5");
+        const comp6 = document.getElementById("comp6");
+        const comp7 = document.getElementById("comp7");
+        const comp8 = document.getElementById("comp8");
+        
+        // Logical operators
+        const log1 = document.getElementById("log1");
+        const log2 = document.getElementById("log2");
+        const log3 = document.getElementById("log3");
+        
+        // Bitwise operators
+        const bit1 = document.getElementById("bit1");
+        const bit2 = document.getElementById("bit2");
+        const bit3 = document.getElementById("bit3");
+        const bit4 = document.getElementById("bit4");
+        const bit5 = document.getElementById("bit5");
+        const bit6 = document.getElementById("bit6");
+        const bit7 = document.getElementById("bit7");
+
+        let salary = 5000;
+        let a = 10;
+        let b = 3;
+        let x, y;
+
+        /*========== Salary Examples =============*/
+        salaryElement.innerHTML = "First Salary: " + salary + " Bounds";
+        salary = 7000;
+        salaryElement.innerHTML += "<br>Updated salary: " + salary;
+
+        /* Redeclare salary with let, const in different scope */
+        {
+            let salary = 10000;
+            salaryElement.innerHTML += "<br>Different scope let salary: " + salary;
+
+            const salaryConst = 11000;
+            salaryElement.innerHTML += "<br>Different scope const salary: " + salaryConst;
+        }
+
+        /*========== Arithmetic Examples =============*/
+        arithmeticExamples.innerHTML = `
+            <p><code>let a = 10, b = 3;</code></p>
+            <p>Addition (+): ${a} + ${b} = ${a + b}</p>
+            <p>Subtraction (-): ${a} - ${b} = ${a - b}</p>
+            <p>Multiplication (*): ${a} * ${b} = ${a * b}</p>
+            <p>Division (/): ${a} / ${b} = ${(a / b).toFixed(2)}</p>
+            <p>Modulus (%): ${a} % ${b} = ${a % b}</p>
+            <p>Exponentiation (**): ${a} ** ${b} = ${a ** b}</p>
+            <p>Increment (++): a = ${a}, after a++ = ${a++} (now a = ${a})</p>
+            <p>Decrement (--): a = ${a}, after a-- = ${a--} (now a = ${a})</p>
+        `;
+
+        /*========== Assignment Examples =============*/
+        x = 10; y = 5;
+        assign1.textContent = `x = ${x = y}`;
+        
+        x = 10; y = 5;
+        assign2.textContent = `x = ${x += y}`;
+        
+        x = 10; y = 5;
+        assign3.textContent = `x = ${x -= y}`;
+        
+        x = 10; y = 5;
+        assign4.textContent = `x = ${x *= y}`;
+        
+        x = 10; y = 5;
+        assign5.textContent = `x = ${x /= y}`;
+        
+        x = 10; y = 5;
+        assign6.textContent = `x = ${x %= y}`;
+        
+        x = 10; y = 5;
+        assign7.textContent = `x = ${x **= y}`;
+
+        /*========== Comparison Examples =============*/
+        comp1.textContent = 5 == "5";
+        comp2.textContent = 5 === "5";
+        comp3.textContent = 5 != "5";
+        comp4.textContent = 5 !== "5";
+        comp5.textContent = 5 > 3;
+        comp6.textContent = 5 < 3;
+        comp7.textContent = 5 >= 5;
+        comp8.textContent = 5 <= 3;
+
+        /*========== Logical Examples =============*/
+        log1.textContent = true && false;
+        log2.textContent = true || false;
+        log3.textContent = !true;
+
+        /*========== Bitwise Examples =============*/
+        bit1.textContent = 5 & 1;
+        bit2.textContent = 5 | 1;
+        bit3.textContent = 5 ^ 1;
+        bit4.textContent = ~5;
+        bit5.textContent = 5 << 1;
+        bit6.textContent = 5 >> 1;
+        bit7.textContent = 5 >>> 1;
+    </script>
+</body>
+</html>

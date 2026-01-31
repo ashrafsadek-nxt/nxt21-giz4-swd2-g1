@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+    background-color: #e2dbcf;
+    font-family: Poppins;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10% 20% 8% 50%;
+}
+
+.logo-sec h1 {
+    margin-top: 2%;
+    margin-left: 40%;
+    color: rgb(244, 98, 45);
+    font-family: cursive;
+
+}
+
+.logo-sec h1::first-letter {
+    font-size: 50px;
+
+}
+
+ul.head-nav {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.head-nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.head-nav li a {
+    text-decoration: none;
+    color: rgb(244, 98, 45);
+    font-size: 20px;
+}
+
+#active {
+    background-color: rgb(244, 98, 45);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.head-nav li a:hover {
+    background-color: rgb(244, 98, 45);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.contact {
+    margin: 70px 0;
+}
+
+.contact-form {
+    padding-left: 100px;
+}
+
+.contact-form h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: rgb(244, 98, 45);
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+
+.contact-form button {
+    background-color: rgb(244, 98, 45);
+    padding: 10px 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid orange;
+}
+
+.contact-img {
+    width: 80%;
+    border-radius: 10px;
+    height: 450px;
+}
+
+footer {
+    border-top: 1px solid rgb(244, 98, 45);
+    margin: 5% 15%;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin: 20px 50px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #84a8b0;
+
+}
+
+footer ul li a:hover {
+    color: rgb(244, 98, 45);
+
+}
+
+.clear {
+    clear: both;
+}
+
+footer div p {
+    color: #84a8b0;
+    margin: auto;
+    text-align: center;
+}
+
+/*=======================Layout Page==========================*/
+
+.parent {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.margin-box {
+    /* margin: auto; */
+    background-color: #f8cfa9;
+    padding: 30px;
+    display: inline-block;
+    border: 1px dashed black;
+}
+
+.border-box {
+    background-color: #fae9a0;
+    padding: 20px;
+    border: 1px dashed black;
+}
+
+.padding-box {
+    background-color: #c0da9d;
+    padding: 20px;
+    border: 1px dashed black;
+}
+
+.content-box {
+    background-color: #84a8b0;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.taps {
+    border: 1px dashed #8ba469;
+    margin: 10px auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content-tap {
+    background-color: #84a8b0;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.padding-tap {
+    background-color: #c0da9d;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+.border-tap {
+    background-color: #fae9a0;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.margin-tap {
+    background-color: #f8cfa9;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.box-details , .border-types{
+    border: 2px dashed #8ba469;
+    text-align: start;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.box-details h4,.border-types h4 {
+    margin: 5px 0px;
+    font-size: 21px;
+}
+
+.box-details span {
+    margin: 5px 0px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.box-details p, .border-types p{
+    margin: 5px 0px;
+    font-size: 16px;
+    padding: 10px;
+}
+.all{
+    border: 2px solid #daa36f;
+}
+.bottom{
+    border-bottom: 2px solid #daa36f;
+}
+.rounded{
+    border: 1px solid #daa36f;
+    border-radius: 8px;
+}
+.left{
+    border-left: 10px solid #daa36f;
+    background-color: #fae9a0;
+}
+.dashed{
+    border: 1px dashed #daa36f;
+}
+.dotted{
+    border: 1px dotted #daa36f;
+}
+.double{
+    border: 3px double #daa36f;
+}
+.groove{
+    border: 5px groove #daa36f;
+}
+.ridge{
+    border:4px ridge #daa36f;
+}
+.inset{
+    border: 7px solid #daa36f;
+}
+.outset{
+    border: 8px outset #daa36f;
+}
+.none{
+    border: none;
+}
+.h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================card======================================*/
+.personal-id {
+    width: 50%;
+    margin: 140px auto;
+    border: 2px solid #84a8b0;
+    height: 500px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 8px 4px #84a8b0;
+}
+
+.container {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: -70px;
+    border: 3px solid #84a8b0;
+    outline: 2px solid #839769;
+    outline-offset: 2px;
+
+}
+
+.img-id {
+    width: 100%;
+    height: auto;
+}

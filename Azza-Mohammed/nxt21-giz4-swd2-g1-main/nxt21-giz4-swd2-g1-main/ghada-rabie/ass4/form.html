@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <!-- Text-based -->
+        <label for="text-input">Text:</label>
+        <input type="text" id="text-input" name="text" placeholder="Regular text input">
+        <hr>
+        
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email" placeholder="user@example.com">
+        <hr>
+        
+        <label for="password-input">Password:</label>
+        <input type="password" id="password-input" name="password" placeholder="••••••••">
+        <hr>
+        
+        <label for="tel-input">Telephone:</label>
+        <input type="tel" id="tel-input" name="telephone" placeholder="(123) 456-7890">
+        <hr>
+        
+        <label for="url-input">URL:</label>
+        <input type="url" id="url-input" name="url" placeholder="https://example.com">
+        <hr>
+        
+        <label for="search-input">Search:</label>
+        <input type="search" id="search-input" name="search" placeholder="Search...">
+        <hr>
+        
+        <label for="number-input">Number:</label>
+        <input type="number" id="number-input" name="number" min="0" max="100" step="1">
+        <hr>
+        
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input" name="date">
+        <hr>
+        
+        <label for="time-input">Time:</label>
+        <input type="time" id="time-input" name="time">
+        <hr>
+        
+        <label for="datetime-local-input">DateTime:</label>
+        <input type="datetime-local" id="datetime-local-input" name="datetime-local">
+        <hr>
+        
+        <label for="month-input">Month:</label>
+        <input type="month" id="month-input" name="month">
+        <hr>
+        
+        <label for="week-input">Week:</label>
+        <input type="week" id="week-input" name="week">
+        <hr>
+        
+        <label for="color-input">Color:</label>
+        <input type="color" id="color-input" name="color">
+        <hr>
+        
+        <label for="range-input">Range:</label>
+        <input type="range" id="range-input" name="range" min="0" max="100" value="50">
+        <hr>
+        
+        <!-- Selection -->
+        <label for="select-single">Single Select:</label>
+        <select id="select-single" name="select-single">
+            <option value="">-- Please choose --</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <hr>
+        
+        <label for="datalist-input">Datalist:</label>
+        <input list="browsers" id="datalist-input" name="browser" placeholder="Type a browser name">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+        <hr>
+        
+        <!-- Checkbox and Radio -->
+        <label>Checkboxes (Multiple Selection):</label>
+        <ul style="list-style: none;">
+            <li><input type="checkbox" name="checkboxes" value="checkbox1"> HTML</li>
+            <li><input type="checkbox" name="checkboxes" value="checkbox2"> CSS</li>
+            <li><input type="checkbox" name="checkboxes" value="checkbox3"> JS</li>
+        </ul>
+        <hr>
+
+        <label>Radio Buttons (Single Selection):</label>
+        <ul style="list-style: none;">
+            <li><input type="radio" name="radios" value="radio1"> Single</li>
+            <li><input type="radio" name="radios" value="radio2"> Married</li>
+            <li><input type="radio" name="radios" value="radio3"> Devorced</li>
+        </ul>
+        <hr>
+        
+        <!-- Textarea -->
+        <label for="textarea-input">Textarea:</label>
+        <textarea id="textarea-input" name="textarea" cols="10" rows="5" placeholder="Enter your message here..."></textarea>
+        <hr>
+        
+        <!-- File -->
+        <label for="file-input">File Upload:</label>
+        <input type="file" id="file-input" name="file">
+        <hr>
+        
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

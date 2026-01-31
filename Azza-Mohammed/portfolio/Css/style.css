@@ -1,0 +1,239 @@
+/* ==================================================General Styling=================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: #DDDDDD;
+}
+
+.content-width {
+    width: 90%;
+    margin: 20px auto;
+
+}
+[class*="col-"] {
+    float: left;
+    padding:15px;
+    box-sizing: border-box;
+
+}
+
+/*===================== styles =====================*/
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-dark-green {
+    background-color: #009688;
+}
+
+.text-dark-green {
+    color: #009688;
+}
+
+.text-gry {
+    color: #949393;
+}
+
+.text-white {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.radius-5 {
+    border-radius: 3px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+/*=====================================grid view=============================================*/
+/*================================mobile first===============================================*/
+/* Clearing the float effect after a row*/
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+
+}
+
+
+[class*="col-"] {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.right-aside{
+    margin:30px 0;
+}
+
+/*=======================margin and padding================================*/
+.padding-0 {
+    padding: 0%;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.m-left-15 {
+    margin-left: 15px;
+}
+
+.m-left-10 {
+    margin-left: 10px;
+}
+
+
+.m-bottom-5 {
+    margin-bottom: 5px;
+}
+.m-bottom-8 {
+    margin-bottom: 8px;
+}
+.m-bottom-20 {
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0.5px solid #ddd;
+    width: 800px;
+
+    margin: 20px auto;
+}
+
+
+/*=====================Starting===================== */
+.personal-image {
+    height: 300px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.personal-image img {
+    width: 100%;
+    height: auto;
+}
+
+.work-icon {
+    font-size: 42px;
+
+}
+
+.work-text {
+    font-size: 25px;
+}
+
+.full-width {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.experience-item {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+.progress-bar {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+    height: 15px;
+}
+
+.progress-fill {
+    background-color: #009688;
+    height: 100%;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+p:last-of-type {
+    font-size: 13px;
+}
+
+/*===========================Responsiveness=============================*/
+@media(min-width:768px) {
+ .col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333%;
+    float: left;
+    /* padding: 15px; */
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.6666%;
+    float: left;
+    /* padding: 15px; */
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+}

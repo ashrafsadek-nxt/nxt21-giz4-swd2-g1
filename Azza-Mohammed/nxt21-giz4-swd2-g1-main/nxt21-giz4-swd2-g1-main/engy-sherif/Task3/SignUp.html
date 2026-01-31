@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="form-box">
+      <form action="success.html" method="post">
+        <p>Already have an account? <a href="SignIn.html">Sign in →</a></p>
+        <h2>Sign Up</h2>
+        <button id="btn1">Continue with Google</button>
+        <button id="btn2">Continue with Apple</button>
+        <hr>
+        <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="password" required minlength="8" placeholder="Password">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required  autocomplete="on">
+            <label for="country" id="country_label">Your Country/Region</label>
+            <select id="country" name="country">
+                    <option value="egypt" selected>Egypt</option> 
+                    <option value="southafrica">South Africa</option>
+                   <option value="nigeria">Nigeria</option>
+                   <option value="kenya">Kenya</option>
+                  <option value="SaudiArabia">Saudi Arabia</option>
+                   <option value="china">China</option> 
+                   <option value="thailand">Thailand</option>
+                   <option value="germany">Germany</option> 
+                   <option value="france">France</option> 
+                   <option value="italy">Italy</option>
+            </select>
+            <label >Email preferences </label>
+            <input type="checkbox" id="chbox" value=" Receive occasional product updates and announcements">
+            <label for="chbox" id="prf"> Receive occasional product updates and announcements</label>
+
+            <input type="submit" id="sign_up" value="Create account >" >
+
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
