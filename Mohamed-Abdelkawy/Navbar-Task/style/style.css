@@ -1,0 +1,15 @@
+.product-card {
+    min-height: 200px;
+}
+/* Sidebar responsive - أفقي في الشاشات الصغيرة */
+@media (max-width: 767px) {
+    aside ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    aside ul li {
+        margin-bottom: 0 !important;
+    }
+}
