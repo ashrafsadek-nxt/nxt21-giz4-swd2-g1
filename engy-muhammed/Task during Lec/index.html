@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website</title>
+
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR 1 (FIXED) -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <span class="navbar-brand">My Website</span>
+      </div>
+    </nav>
+
+    <!-- NAVBAR 2 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light second-nav">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <aside class="col-lg-2 col-md-3 d-none d-md-block sidebar">
+          <ul>
+            <li>Category 1</li>
+            <li>Category 2</li>
+            <li>Category 3</li>
+          </ul>
+        </aside>
+
+        <!-- HOME -->
+        <main class="col-lg-10 col-md-9 col-12">
+          <div class="row g-3">
+            <!-- 8 DIVS -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 1</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 2</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 3</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 4</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 5</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 6</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 7</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="box">Item 8</div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">© 2026 My Website</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
