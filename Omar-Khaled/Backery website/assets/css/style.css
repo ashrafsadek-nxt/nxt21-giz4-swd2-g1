@@ -1,0 +1,201 @@
+:root{
+    --primary-color: #000000;
+    --secondary-color: #8E7754;
+    --forth-color: #686868;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Alegreya", serif;
+}
+
+p,span{
+    color: var(--forth-color);
+}
+
+body{
+    font-family: "Alegreya Sans", sans-serif;
+    color: var(--primary-color) !important;
+}
+
+
+
+
+header{
+    background-image: url("../images/drew-coffman-1872.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+#header.header-scroll {
+  background-color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ddd;
+}
+
+#header.header-scroll a {
+  color: #222 !important;
+}
+
+.navbar-brand img{
+    height: 48px ;
+}
+
+.navbar-nav .nav-link{
+    color: white !important;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-link:hover{
+    color: var(--secondary-color) !important;
+}
+
+header button:nth-child(1){
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+header button:nth-child(1):hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+header button:nth-child(2){
+    background-color: transparent;
+    color: white;
+    border: 3px solid white; 
+    transition: 0.5s;
+}
+
+header button:nth-child(2):hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 3px solid #fff; 
+    transition: 0.5s;
+}
+
+
+.icon-image{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8e77546b;
+    border-radius: 50%;
+}
+
+.icon-body p{
+    align-self: center;
+    margin: 0;
+}
+
+#location, #contact{
+    background-color: #f8f8f8;
+} 
+
+#contact .icon-image{
+    border: none;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer section:nth-child(1){
+    background-color:#403D38 ;
+}
+
+.w-10{
+    width: 10%;
+}
+
+.h-10{
+    height: 10%;
+}
+
+
+
+
+
+footer p , footer span{
+    color:#777
+}
+
+
+
+.footer-bottom {
+  background-color: #353330;
+  text-align: center;
+}
+
+.footer-bottom img {
+  display: block;
+  margin: 10px auto 25px;
+}
+
+.footer .contact-details {
+  position: relative;
+}
+.demo-content {
+  position: relative;
+  z-index: 2;
+}
+
+.demo-bg {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+
+.footer-bottom p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.social-cont {
+  margin-top: 15px;
+  padding-top: 8px;
+}
+
+.social-cont a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #484540;
+  border-radius: 50%;
+  color: #777;
+  font-size: 20px;
+  padding-top: 10px;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+.social-cont a:hover {
+  color: #fff;
+}
+.social-cont a:hover.facebook-color {
+  background-color: #1877f2;
+}
+.social-cont a:hover.google-color {
+  background-color: #dd4b39;
+}
+.social-cont a:hover.linked-color {
+  background-color: #0a66c2;
+}
+.social-cont a:hover.twitter-color {
+  background-color: #1da1f2;
+}
