@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d9e2ec;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #a9c4dd, #c3d4e6);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #163a5f;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0b2540;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2.8rem;
+    color: #163a5f;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: #e1e8f0;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+section h2 {
+    color: #163a5f;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #b6c6d6;
+    text-align: left;
+}
+
+table th {
+    background: #c7d6e6;
+    color: #163a5f;
+}
+
+p {
+    font-size: 1.05rem;
+    color: #2f3e4e;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    background: #a9c4dd;
+    padding: 30px;
+    text-align: center;
+}
+
+footer h2 {
+    color: #163a5f;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #163a5f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer strong {
+    display: block;
+    margin-top: 15px;
+    color: #1f2933;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.skills-page section {
+    background: transparent; 
+    padding: 0; 
+    margin: 0; 
+    box-shadow: none; 
+}
+.skill-card {
+    background: #e1e8f0; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.skill-card h3 {
+    color: #163a5f;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.skill-card p {
+    color: #2f3e4e;
+    font-size: 1rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
